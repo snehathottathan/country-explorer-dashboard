@@ -23,8 +23,8 @@ export const fetchCountries = async()=>{
 
 export const fetchWeather = async(city)=>{
 
-    // let APP_KEY = process.env.REACT_APP_WEATHER_KEY
-    let APP_KEY ='b987857dd86e776d8060fa5ccfda0d35'
+    let APP_KEY = process.env.REACT_APP_WEATHER_KEY
+    // let APP_KEY ='b987857dd86e776d8060fa5ccfda0d35'
 
   const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APP_KEY}`)
 
