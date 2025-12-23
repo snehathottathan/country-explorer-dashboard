@@ -2,7 +2,10 @@
   display: flex;
   gap: 16px;
   padding: 0 32px 20px;
+  @media screen and (min-width: 390px) and (max-width:844px) {
 
+      flex-direction: column;
+    }
   select,
   input {
     padding: 10px 12px;
@@ -10,5 +13,12 @@
     border: 1px solid $border;
     font-size: 14px;
     width: 200px;
+
+      @media screen and (min-width: 390px) and (max-width:844px) {
+
+      width: 100%;
+    }
+  
   }
 }
+
