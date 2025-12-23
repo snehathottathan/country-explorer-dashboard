@@ -1,3 +1,8 @@
+
+/**
+ * @Author Sneha T
+ * 
+ */
 import { useFavorites } from "../context/FavoritesContext";
 
 import CountryCard from "../components/CountryCard";
