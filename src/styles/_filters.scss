@@ -1,0 +1,14 @@
+.filters {
+  display: flex;
+  gap: 16px;
+  padding: 0 32px 20px;
+
+  select,
+  input {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid $border;
+    font-size: 14px;
+    width: 200px;
+  }
+}

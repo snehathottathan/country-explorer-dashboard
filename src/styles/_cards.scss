@@ -1,0 +1,40 @@
+.card {
+  @include card;
+  transition: transform $transition, box-shadow $transition;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.12);
+  }
+
+  img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 14px;
+    color: $text-muted;
+    margin-bottom: 4px;
+  }
+
+  .actions {
+    @include flex-between;
+    margin-top: 12px;
+
+    button {
+      background: none;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+}

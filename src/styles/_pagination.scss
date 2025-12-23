@@ -1,0 +1,19 @@
+.pagination {
+  @include flex-between;
+  justify-content: center;
+  gap: 16px;
+  padding-bottom: 40px;
+
+  button {
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: 1px solid $border;
+    background: $white;
+    cursor: pointer;
+
+    &:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+  }
+}

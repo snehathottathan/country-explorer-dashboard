@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: $bg;
+  color: $text-dark;
+}
+
+a {
+  text-decoration: none;
+  color: $primary;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.loader {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+}
